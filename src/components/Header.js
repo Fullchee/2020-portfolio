@@ -15,8 +15,8 @@ class Header extends React.Component {
             <strong>Fullchee Zhang</strong>
           </h1>
           <h2>Full Stack Developer</h2>
-          <a href="">U of T CS Grad</a> with a passion for the process of
-          learning
+          Toronto bred <a href="">U of T CS Grad</a> with a passion for the
+          process of learning
         </div>
         <Footer />
       </header>

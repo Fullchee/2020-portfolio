@@ -22,6 +22,7 @@ import full06 from '../assets/images/fulls/06.jpg'
 import civicTech from '../assets/images/fulls/civic-tech.jpg'
 import chineseChess from '../assets/images/fulls/really-bad-chinese-chess.jpg'
 import owasp from '../assets/images/fulls/owasp-toronto.jpeg'
+import dotFiles from '../assets/images/fulls/dotfiles.jpg'
 import carDetail from '../assets/images/fulls/car-detail-exchange.jpg'
 import delayDarkEra from '../assets/images/fulls/delay-the-dark-era.jpg'
 import dragonBoatCalls from '../assets/images/fulls/dragon-boat-calls.jpg'
@@ -46,10 +47,12 @@ const CURR_PROJECTS = [
 const PAST_PROJECTS = [
   {
     id: '1',
-    src: full01,
-    thumbnail: thumb01,
-    caption: 'Photo 1',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    src: dragonBoatCalls,
+    thumbnail: dragonBoatCalls,
+    caption: 'Static Site for learning dragon boat calls',
+    description: 'Vanilla JS site with descriptions and videos',
+    code: 'https://github.com/Fullchee/dragon-boat-calls',
+    demo: 'https://fullchee.github.io/dragon-boat-calls',
   },
   {
     id: '2',
@@ -57,34 +60,41 @@ const PAST_PROJECTS = [
     thumbnail: carDetail,
     caption: 'Car Detail Exchange',
     description: 'Made with Node.js, Express.js and MySQL',
+    demo: 'https://hidden-shore-40090.herokuapp.com/',
   },
   {
     id: '3',
-    src: full03,
-    thumbnail: thumb03,
-    caption: 'Photo 3',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    src: dotFiles,
+    thumbnail: dotFiles,
+    caption: 'Dotfiles Repository for Ubuntu',
+    description: 'zsh, git, npm and other configuration files',
+    code: 'https://github.com/Fullchee/dotfiles',
   },
   {
     id: '4',
-    src: full04,
-    thumbnail: thumb04,
-    caption: 'Photo 4',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    src: null,
+    thumbnail: null,
+    caption: 'Post Install Scripts',
+    description:
+      'Scripts and checklists for setting up my dev environments for Linux, Mac and Windows.',
+    code: 'https://github.com/Fullchee/post-install-scripts',
   },
   {
     id: '5',
-    src: full05,
-    thumbnail: thumb05,
-    caption: 'Photo 5',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    src: null,
+    thumbnail: null,
+    caption: 'Implemented the software of a router',
+    description:
+      'Used a Linux Virtual Machine to program the router and Built with mininet to support TCP, ICMP and NAT',
   },
   {
     id: '6',
-    src: full06,
-    thumbnail: thumb06,
-    caption: 'Photo 6',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    src: delayDarkEra,
+    thumbnail: delayDarkEra,
+    caption: 'HTML5 Game: Delay the Dark Era',
+    description: 'HTML5 Game with the mouse',
+    code: 'https://github.com/Fullchee/delay-the-dark-era',
+    demo: 'https://fullchee.github.io/delay-the-dark-era/',
   },
 ]
 
@@ -158,14 +168,6 @@ class HomeIndex extends React.Component {
                 })
               )}
             />
-
-            <ul className="actions">
-              <li>
-                <a href="#" className="button">
-                  Full Portfolio
-                </a>
-              </li>
-            </ul>
           </section>
 
           <section id="two">
@@ -182,85 +184,13 @@ class HomeIndex extends React.Component {
               )}
             />
 
-            <ul className="actions">
+            {/* <ul className="actions">
               <li>
                 <a href="#" className="button">
                   Full Portfolio
                 </a>
               </li>
-            </ul>
-          </section>
-
-          <section id="three">
-            <h2>Get In Touch</h2>
-            <p>
-              Accumsan pellentesque commodo blandit enim arcu non at amet id
-              arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi
-              lorem vulputate lorem neque lorem ipsum dolor.
-            </p>
-            <div className="row">
-              <div className="8u 12u$(small)">
-                <form method="post" action="#">
-                  <div className="row uniform 50%">
-                    <div className="6u 12u$(xsmall)">
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Name"
-                      />
-                    </div>
-                    <div className="6u 12u$(xsmall)">
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Email"
-                      />
-                    </div>
-                    <div className="12u">
-                      <textarea
-                        name="message"
-                        id="message"
-                        placeholder="Message"
-                        rows="4"
-                      />
-                    </div>
-                  </div>
-                </form>
-                <ul className="actions">
-                  <li>
-                    <input type="submit" value="Send Message" />
-                  </li>
-                </ul>
-              </div>
-              <div className="4u 12u$(small)">
-                <ul className="labeled-icons">
-                  <li>
-                    <h3 className="icon fa-home">
-                      <span className="label">Address</span>
-                    </h3>
-                    1234 Somewhere Rd.
-                    <br />
-                    Nashville, TN 00000
-                    <br />
-                    United States
-                  </li>
-                  <li>
-                    <h3 className="icon fa-mobile">
-                      <span className="label">Phone</span>
-                    </h3>
-                    000-000-0000
-                  </li>
-                  <li>
-                    <h3 className="icon fa-envelope-o">
-                      <span className="label">Email</span>
-                    </h3>
-                    <a href="#">hello@untitled.tld</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            </ul> */}
           </section>
         </div>
       </Layout>

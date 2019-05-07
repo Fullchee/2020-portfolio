@@ -51,6 +51,9 @@ class Gallery extends Component {
 
     this.gotoNext()
   }
+
+  setupDescription() {}
+
   renderGallery() {
     const { images } = this.props
 
@@ -61,13 +64,14 @@ class Gallery extends Component {
         <article className="6u 12u$(xsmall) work-item" key={i}>
           <a
             className="image fit thumb"
-            href={obj.src}
+            href="https://www.google.ca"
             onClick={e => this.openLightbox(i, e)}
           >
             <img src={obj.thumbnail} />
           </a>
 
           <h3>{obj.caption}</h3>
+          {/* TODO: <p>{this.setupDescription()} */}
           <p>{obj.description}</p>
         </article>
       )
@@ -79,7 +83,7 @@ class Gallery extends Component {
     return (
       <div>
         {this.renderGallery()}
-        <Lightbox
+        {/* <Lightbox
           currentImage={this.state.currentImage}
           images={this.props.images}
           isOpen={this.state.lightboxIsOpen}
@@ -88,7 +92,7 @@ class Gallery extends Component {
           onClickPrev={this.gotoPrevious}
           onClickThumbnail={this.gotoImage}
           onClose={this.closeLightbox}
-        />
+        /> */}
       </div>
     )
   }

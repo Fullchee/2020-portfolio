@@ -4,3 +4,5 @@
 
 1. `yarn install`
 2. `gatsby develop` in the terminal to start.
+
+https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages/

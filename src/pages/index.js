@@ -21,7 +21,6 @@ import full06 from '../assets/images/fulls/06.jpg'
 
 import civicTech from '../assets/images/fulls/civic-tech.jpg'
 import chineseChess from '../assets/images/fulls/really-bad-chinese-chess.jpg'
-import owasp from '../assets/images/fulls/owasp-toronto.jpeg'
 import dotFiles from '../assets/images/fulls/dotfiles.jpg'
 import carDetail from '../assets/images/fulls/car-detail-exchange.jpg'
 import delayDarkEra from '../assets/images/fulls/delay-the-dark-era.jpg'

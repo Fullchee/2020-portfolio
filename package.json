@@ -2,7 +2,8 @@
   "name": "gatsby-starter-default",
   "description": "Gatsby default starter",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Fullchee Zhang",
+  "homepage": "https://fullchee.github.io/2019-portfolio",
   "dependencies": {
     "gatsby": "^2.2.9",
     "gatsby-plugin-manifest": "^2.0.24",
@@ -21,6 +22,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "start": "gatsby develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
@@ -33,6 +35,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/Fullchee/2019-portfolio"
   }
 }

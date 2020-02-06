@@ -86,7 +86,7 @@ export default class Home extends React.Component {
 
             <Gallery
               projects={PAST_PROJECTS.map(
-                ({ id, src, thumbnail, caption, description }) => ({
+                ({ src, thumbnail, caption, description }) => ({
                   src,
                   thumbnail,
                   caption,

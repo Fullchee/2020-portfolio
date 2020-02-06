@@ -1,19 +1,22 @@
-import React from 'react'
-import '../assets/scss/main.scss'
+import React from "react";
+import PropTypes from "prop-types";
+import "../assets/scss/main.scss";
 
-import Header from './Header'
+import Header from "./Header";
 
-class Template extends React.Component {
-    render() {
-        const { children } = this.props
+export default class Template extends React.Component {
+  render() {
+    const { children } = this.props;
 
-        return (
-            <div>
-                <Header />
-                {children}
-            </div>
-        )
-    }
+    return (
+      <div>
+        <Header />
+        {children}
+      </div>
+    );
+  }
 }
 
-export default Template
+Template.propTypes = {
+  children: PropTypes.any
+};

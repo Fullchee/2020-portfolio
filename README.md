@@ -11,6 +11,7 @@
   - button for demo
 - post install scripts: robot logo
 - IBM work
+- do I want to develop a new program?
 
 ## Dev
 

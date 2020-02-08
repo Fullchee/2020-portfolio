@@ -1547,3 +1547,8 @@ body.is-touch {
 		border: 3px solid white;
 	}
 }
+
+.project-buttons {
+	display: flex;
+	justify-content: space-evenly;
+}

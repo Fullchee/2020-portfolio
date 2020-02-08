@@ -3,25 +3,22 @@ import React, { Component } from "react";
 
 export default class Project extends Component {
   render() {
+    const project = this.props.project;
     return (
-      <article
-        className="6u 12u$(xsmall) work-item"
-        key={this.props.project.id}
-      >
+      <article className="6u 12u$(xsmall) work-item">
         <a
           className="image fit"
           href="https://www.google.ca"
           onClick={() => {}}
         >
-          <img
-            src={this.props.project.img}
-            alt={this.props.project.altText || ""}
-          />
+          <img src={project.img} alt={project.altText || ""} />
         </a>
-
-        <h3>{this.props.project.caption}</h3>
-        {/* TODO: <p>{this.setupDescription()} */}
-        <p>{this.props.project.description}</p>
+        <h3>{project.caption}</h3>
+        <div className="project-buttons">
+          <button className="button">Repo</button>
+          <button className="button">Demo</button>
+        </div>
+        <p>{project.description}</p>
       </article>
     );
   }

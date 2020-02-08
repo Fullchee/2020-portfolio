@@ -1,3 +1,3 @@
-import Home from "../components/Home";
+import Portfolio from "../components/Portfolio";
 
-export default Home;
+export default Portfolio;

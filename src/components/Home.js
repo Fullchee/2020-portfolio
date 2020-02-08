@@ -69,27 +69,13 @@ export default class Home extends React.Component {
           <section id="one">
             <h2>Current Work</h2>
 
-            <Gallery
-              projects={CURRENT_PROJECTS.map(
-                ({ id, img, caption, description }) => ({
-                  img,
-                  caption,
-                  description
-                })
-              )}
-            />
+            <Gallery projects={CURRENT_PROJECTS} />
           </section>
 
           <section id="two">
             <h2>Recent Work</h2>
 
-            <Gallery
-              projects={PAST_PROJECTS.map(({ img, caption, description }) => ({
-                img,
-                caption,
-                description
-              }))}
-            />
+            <Gallery projects={PAST_PROJECTS} />
 
             {/* <ul className="actions">
               <li>

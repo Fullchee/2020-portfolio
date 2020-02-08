@@ -6,7 +6,7 @@ import dragonBoatCalls from "../assets/images/projects/dragon-boat-calls.jpg";
 
 export const CURRENT_PROJECTS = [
   {
-    id: "1",
+    id: "0",
     img: chineseChess,
     alt: "chinese chess board",
     caption: "Chinese Chess with React!",

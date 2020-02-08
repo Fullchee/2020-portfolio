@@ -21,7 +21,7 @@ export default class Portfolio extends React.Component {
 
         <div id="main">
           <section id="one">
-            <h2>Recent Work</h2>
+            <h2>Web Development Work</h2>
 
             <Gallery projects={PAST_PROJECTS} />
 

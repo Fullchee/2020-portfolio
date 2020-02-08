@@ -11,9 +11,8 @@ export default class Gallery extends Component {
     };
   }
   tagClick = e => {
-    debugger;
     const tag = e.target.dataset.value;
-    const newFilter = this.state === tag ? "" : tag;
+    const newFilter = this.state.filter === tag ? "" : tag;
     this.setState({
       filter: newFilter
     });

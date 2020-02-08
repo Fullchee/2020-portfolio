@@ -1577,3 +1577,29 @@ body.is-touch {
 .project__image:hover .image__overlay {
 	transform: translateY(0);
 }
+
+.tag {
+	margin-bottom: 5px;
+	margin-right: 1px;
+	padding: 8px 20px;
+	border-radius: 30px;
+	background: transparent;
+	color: black;
+	border: 3px solid #b2b2b2;
+	transition: 0.2s ease all;
+
+	&:hover {
+		background: #fff;
+		color: _palette(accent1, bg);
+		border: 3px solid white;
+	}
+	&[data-selected="true"] {
+		text-transform: uppercase;
+		background: _palette(accent1, bg);
+		border-color: _palette(accent1, bg);
+		&:hover {
+			color: black;
+			background: #39967c;
+		}
+	}
+}

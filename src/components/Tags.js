@@ -14,6 +14,7 @@ export default class Tags extends Component {
     const buttons = this.state.tags.map(tag => {
       return (
         <button
+          className="tag"
           key={tag}
           data-selected={this.props.filter === tag}
           onClick={this.props.tagClick}
@@ -26,6 +27,7 @@ export default class Tags extends Component {
     return (
       <div>
         <button
+          className="tag"
           data-value=""
           data-selected={this.props.filter === ""}
           onClick={this.props.tagClick}

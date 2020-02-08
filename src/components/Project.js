@@ -7,12 +7,16 @@ export default class Project extends Component {
     const tags = project.tags || [];
     const buttons = tags.map(tag => {
       return (
-        <button key={`${project.id}-${tag}`} onClick={this.props.tagClick}>
+        <button
+          className="tag"
+          key={`${project.id}-${tag}`}
+          onClick={this.props.tagClick}
+        >
           {tag}
         </button>
       );
     });
-    return <div>{buttons}</div>;
+    return <div style={{ marginTop: "10px" }}>{buttons}</div>;
   };
 
   render() {

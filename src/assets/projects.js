@@ -22,7 +22,7 @@ export const PAST_PROJECTS = [
     description: "",
     repo: "https://github.com/Fullchee/calendar-shifts",
     demo: "https://calendar-shifts.netlify.com/",
-    tags: ["React", "Front-end", "JavaScript", "Cypress", "CSS"]
+    tags: ["React", "Front-end", "JavaScript"]
   },
   {
     id: "fullchee-values",
@@ -32,15 +32,7 @@ export const PAST_PROJECTS = [
     caption: "Fullchee's values",
     description:
       "Give a random video of something meaningful to remind you of who you want to be",
-    tags: [
-      "GraphQL",
-      "Node.js",
-      "Express",
-      "React",
-      "Front-end",
-      "Back-end",
-      "JavaScript"
-    ]
+    tags: ["GraphQL", "Node.js", "React", "Front-end", "Back-end", "JavaScript"]
   },
   {
     id: "courseography",
@@ -49,7 +41,7 @@ export const PAST_PROJECTS = [
     description: "",
     repo: "https://github.com/Courseography/courseography",
     demo: "https://courseography.cs.toronto.edu/",
-    tags: ["JavaScript", "React", "Front-end", "Testing"]
+    tags: ["JavaScript", "React", "Front-end"]
   },
   {
     id: "1",
@@ -66,7 +58,7 @@ export const PAST_PROJECTS = [
     caption: "Car Detail Exchange",
     description: "Made with Node.js, Express.js and MySQL",
     demo: "https://hidden-shore-40090.herokuapp.com/",
-    tags: ["MySQL", "Node.js", "JavaScript", "Express", "Back-end"]
+    tags: ["SQL", "Node.js", "JavaScript", "Back-end"]
   },
   {
     id: "3",
@@ -100,7 +92,7 @@ export const PAST_PROJECTS = [
     description: "HTML5 Game with the mouse",
     repo: "https://github.com/Fullchee/delay-the-dark-era",
     demo: "https://fullchee.github.io/delay-the-dark-era/",
-    tags: ["JavaScript", "Canvas", "Front-end"]
+    tags: ["JavaScript", "Front-end"]
   }
 ];
 

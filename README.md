@@ -11,7 +11,8 @@
   - button for demo
 - post install scripts: robot logo
 - IBM work
-- do I want to develop a new program?
+- do I want to develop a new page for every project?
+  - https://caferati.me/portfolio
 
 ## Dev
 

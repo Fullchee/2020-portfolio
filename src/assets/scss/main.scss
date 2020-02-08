@@ -467,7 +467,7 @@ input[type="radio"] {
 		width: 100%;
 	}
 
-	&.thumb {
+	&.project--image {
 		text-align: center;
 
 		&:after {
@@ -880,6 +880,10 @@ input[type="button"],
 
 .work-item {
 	margin: 0 0 _size(element-margin) 0;
+	padding: 20px;
+	background: #fafafa;
+	border: 2px solid #eee; 
+	border-radius: 10px;
 
 	.image {
 		margin: 0 0 (_size(element-margin) * 0.75) 0;
@@ -1168,19 +1172,6 @@ input[type="button"],
 /* Touch */
 
 body.is-touch {
-
-	.image {
-		&.thumb {
-			&:before {
-				opacity: 0.5 !important;
-			}
-
-			&:after {
-				display: none !important;
-			}
-		}
-	}
-
 	#header {
 		background-attachment: scroll;
 		background-size: auto, cover;
@@ -1539,7 +1530,7 @@ body.is-touch {
 	background: transparent;
 	color: #b2b2b2;
 	border: 3px solid #b2b2b2;
-	transition: 0.5s ease all;
+	transition: 0.2s ease all;
 
 	&:hover {
 		background: #fff;
@@ -1548,7 +1539,41 @@ body.is-touch {
 	}
 }
 
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
 .project-buttons {
 	display: flex;
 	justify-content: space-evenly;
+}
+
+.project__image {
+	width: 300px;
+}
+
+.image__overlay {
+	background: #ffc60032;
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	position: relative;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	transition: 0.2s;
+	transform: translateY(100%);
+}
+
+.image__overlay button {
+	background: none;
+	border: 2px solid white;
+	color: white;
+	text-transform: uppercase;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 5px;
+}
+
+.project__image:hover .image__overlay {
+	transform: translateY(0);
 }

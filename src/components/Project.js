@@ -11,6 +11,8 @@ export default class Project extends Component {
           className="tag"
           key={`${project.id}-${tag}`}
           onClick={this.props.tagClick}
+          data-selected={this.props.selected === tag}
+          data-value={tag}
         >
           {tag}
         </button>
@@ -31,10 +33,10 @@ export default class Project extends Component {
         />
         <div className="image__overlay"></div>
         <div className="project-buttons">
-          <a className="button" href={project.repo}>
-            Repo <span className="icon fa-external-link"></span>
+          <a className="button" target="_blank" href={project.repo}>
+            Repo <span className="icon fa-github"></span>
           </a>
-          <a className="button" href={project.demo}>
+          <a className="button" target="_blank" href={project.demo}>
             Demo <span className="icon fa-external-link"></span>
           </a>
         </div>

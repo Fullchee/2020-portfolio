@@ -3,6 +3,9 @@ import dotFiles from "../assets/images/projects/dotfiles.jpg";
 import carDetail from "../assets/images/projects/car-detail-exchange.jpg";
 import delayDarkEra from "../assets/images/projects/delay-the-dark-era.jpg";
 import dragonBoatCalls from "../assets/images/projects/dragon-boat-calls.jpg";
+import calendarShifts from "../assets/images/projects/calendar-shifts.jpg";
+import valuesImg from "../assets/images/projects/fullchee-values.png";
+import courseography from "../assets/images/projects/courseography.jpg";
 
 export const CURRENT_PROJECTS = [
   {
@@ -17,7 +20,7 @@ export const CURRENT_PROJECTS = [
 export const PAST_PROJECTS = [
   {
     id: "calendar-shifts",
-    img: null,
+    img: calendarShifts,
     caption: "Batch create Google Calendar events",
     description: "",
     repo: "https://github.com/Fullchee/calendar-shifts",
@@ -26,7 +29,7 @@ export const PAST_PROJECTS = [
   },
   {
     id: "fullchee-values",
-    img: null,
+    img: valuesImg,
     repo: "https://github.com/Fullchee/values-client",
     demo: "https://fullchee-values.netlify.com/",
     caption: "Fullchee's values",
@@ -36,9 +39,10 @@ export const PAST_PROJECTS = [
   },
   {
     id: "courseography",
-    img: null,
-    caption: "UofT DCS Projects Group Member",
-    description: "",
+    img: courseography,
+    caption: "Courseography",
+    description:
+      "Improved the maintainability of a React app for future volunteers\n added integration tests \n added git hooks with husky",
     repo: "https://github.com/Courseography/courseography",
     demo: "https://courseography.cs.toronto.edu/",
     tags: ["JavaScript", "React", "Front-end"]

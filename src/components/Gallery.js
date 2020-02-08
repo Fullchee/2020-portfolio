@@ -38,6 +38,7 @@ export default class Gallery extends Component {
             project={project}
             tagClick={this.tagClick}
             key={project.id}
+            selected={this.state.filter}
           />
         );
       });

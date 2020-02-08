@@ -70,7 +70,7 @@ export default class Gallery extends Component {
             href="https://www.google.ca"
             onClick={e => this.openLightbox(i, e)}
           >
-            <img src={project.thumbnail} alt={project.altText || ""} />
+            <img src={project.img} alt={project.altText || ""} />
           </a>
 
           <h3>{project.caption}</h3>

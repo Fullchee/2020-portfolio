@@ -71,9 +71,8 @@ export default class Home extends React.Component {
 
             <Gallery
               projects={CURRENT_PROJECTS.map(
-                ({ id, src, thumbnail, caption, description }) => ({
-                  src,
-                  thumbnail,
+                ({ id, img, caption, description }) => ({
+                  img,
                   caption,
                   description
                 })
@@ -85,14 +84,11 @@ export default class Home extends React.Component {
             <h2>Recent Work</h2>
 
             <Gallery
-              projects={PAST_PROJECTS.map(
-                ({ src, thumbnail, caption, description }) => ({
-                  src,
-                  thumbnail,
-                  caption,
-                  description
-                })
-              )}
+              projects={PAST_PROJECTS.map(({ img, caption, description }) => ({
+                img,
+                caption,
+                description
+              }))}
             />
 
             {/* <ul className="actions">

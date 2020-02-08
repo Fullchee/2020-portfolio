@@ -1,9 +1,15 @@
 import React from "react";
+import resume from "../assets/Fullchee_Zhang_CV.pdf";
 
 class Footer extends React.Component {
   render() {
     return (
       <div id="footer">
+        <div className="resume">
+          <a className="resume__button" href={resume}>
+            Resume
+          </a>
+        </div>
         <div className="inner">
           <ul className="icons">
             <li>
@@ -16,7 +22,7 @@ class Footer extends React.Component {
             </li>
             <li>
               <a
-                href="#https://www.linkedin.com/in/fullchee-zhang/"
+                href="https://www.linkedin.com/in/fullchee-zhang/"
                 className="icon fa-linkedin"
               >
                 <span className="label">LinkedIn</span>

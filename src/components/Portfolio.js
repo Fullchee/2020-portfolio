@@ -5,7 +5,7 @@ import Helmet from "react-helmet";
 import Layout from "./layout";
 import Gallery from "./Gallery";
 
-import { CURRENT_PROJECTS, PAST_PROJECTS } from "../assets/projects";
+import { PAST_PROJECTS } from "../assets/projects";
 
 export default class Portfolio extends React.Component {
   render() {

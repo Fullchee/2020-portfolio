@@ -2,17 +2,11 @@
 
 ## Todos
 
-- filter by tag
-  - eg: GraphQL, Node.js, JS
-  - like uses.tech, pill buttons to filter by
 - alt text for every project's picture
 - image hover
-  - button for repo
-  - button for demo
+  - plays video like YouTube on hover
 - post install scripts: robot logo
-- IBM work
-- do I want to develop a new page for every project?
-  - https://caferati.me/portfolio
+- box shadow around images to make it pop out
 
 ## Dev
 

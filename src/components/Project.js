@@ -24,7 +24,7 @@ export default class Project extends Component {
   getMedia = () => {
     const project = this.props.project;
     if (project.video) {
-      return <video src={project.video} loop></video>;
+      return <video muted src={project.video} loop></video>;
     }
     return (
       <img

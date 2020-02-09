@@ -7,6 +7,7 @@
   - plays video like YouTube on hover
 - post install scripts: robot logo
 - box shadow around images to make it pop out
+- make the header less wide (for desktop)
 
 ## Dev
 

@@ -14,8 +14,8 @@ export default class Header extends React.Component {
           <h1>
             <strong>Fullchee Zhang</strong>
           </h1>
-          <h2>Front-end developer at IBM</h2>
-          <p>Persistent developer who's always striving to be better</p>
+          <h2>Full-stack developer at IBM</h2>
+          <p>Persistent developer who&apos;s always striving to be better</p>
         </div>
         <Footer />
       </header>

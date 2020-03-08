@@ -2,6 +2,7 @@
 
 ## Todos
 
+- montserrat font for my name
 - remove the button for demo if there is no demo
 - alt text for every project's picture
 - image hover

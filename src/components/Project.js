@@ -40,11 +40,13 @@ export default class Project extends Component {
     return (
       <article className="6u 12u work-item">
         <h3>{project.caption}</h3>
-        <img
-          className="project__image"
-          src={project.img}
-          alt={project.altText || ""}
-        />
+        {project.img ? (
+          <img
+            className="project__image"
+            src={project.img}
+            alt={project.altText || ""}
+          />
+        ) : null}
         <div className="image__overlay"></div>
         <div className="project-buttons">
           <a

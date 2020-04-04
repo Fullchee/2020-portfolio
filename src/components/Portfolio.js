@@ -11,13 +11,20 @@ export default class Portfolio extends React.Component {
   render() {
     const siteTitle = "Fullchee's Portfolio";
     const siteDescription = "What I'm working on";
+    const keywords = "web developer, react, javascript, JS, gatsby";
 
     return (
       <Layout>
-        <Helmet>
-          <title>{siteTitle}</title>
-          <meta name="description" content={siteDescription} />
-        </Helmet>
+        <Helmet
+          htmlAttributes={{
+            lang: "en",
+          }}
+          title={siteTitle}
+          meta={[
+            { name: "description", content: { siteDescription } },
+            { name: "keywords", content: { keywords } },
+          ]}
+        ></Helmet>
 
         <div id="main">
           <section id="one">
@@ -40,5 +47,5 @@ export default class Portfolio extends React.Component {
 }
 
 Portfolio.propTypes = {
-  images: PropTypes.array
+  images: PropTypes.array,
 };

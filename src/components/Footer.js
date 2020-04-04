@@ -14,26 +14,29 @@ class Footer extends React.Component {
           <ul className="icons">
             <li>
               <a
+                aria-label="Check out my GitHub"
                 href="https://www.github.com/Fullchee"
                 className="icon fa-github"
               >
-                <span className="label">Github</span>
+                <span className="label">Check out my Github</span>
               </a>
             </li>
             <li>
               <a
+                aria-label="Check out my LinkedIn"
                 href="https://www.linkedin.com/in/fullchee-zhang/"
                 className="icon fa-linkedin"
               >
-                <span className="label">LinkedIn</span>
+                <span className="label">Check out my LinkedIn</span>
               </a>
             </li>
             <li>
               <a
+              aria-label="Email me"
                 href="mailto:fullchee@gmail.com"
                 className="icon fa-envelope-o"
               >
-                <span className="label">Email</span>
+                <span className="label">Email me</span>
               </a>
             </li>
           </ul>

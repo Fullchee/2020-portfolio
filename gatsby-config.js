@@ -1,24 +1,24 @@
 module.exports = {
   siteMetadata: {
     title: "Fullchee's Portfolio",
-    author: 'Fullchee Zhang',
-    description: 'List of projects by Fullchee Zhang',
+    author: "Fullchee Zhang",
+    description: "List of my side projects",
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
+        name: "gatsby-starter-default",
+        short_name: "starter",
+        start_url: "/",
+        background_color: "#663399",
+        theme_color: "#663399",
+        display: "minimal-ui",
+        icon: "src/assets/images/favicon.png", // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
+    "gatsby-plugin-sass",
+    "gatsby-plugin-offline",
   ],
-}
+};

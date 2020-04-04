@@ -18,7 +18,7 @@
     large: "(max-width: 1280px)",
     medium: "(max-width: 980px)",
     small: "(max-width: 736px)",
-    xsmall: "(max-width: 480px)"
+    xsmall: "(max-width: 480px)",
   )
 );
 
@@ -27,22 +27,22 @@
     reset: "full",
     boxModel: "border",
     grid: (
-      gutters: 2.5em
+      gutters: 2.5em,
     ),
     conditionals: true,
     containers: true,
     breakpoints: (
       large: (
         grid: (
-          gutters: 2em
-        )
+          gutters: 2em,
+        ),
       ),
       small: (
         grid: (
-          gutters: 1.5em
-        )
-      )
-    )
+          gutters: 1.5em,
+        ),
+      ),
+    ),
   )
 );
 
@@ -991,6 +991,17 @@ input[type="button"],
   .image.avatar {
     margin: 0 0 (_size(element-margin) * 0.5) 0;
     width: 6.25em;
+  }
+
+  .pronunciation {
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
+
+  .name-emph {
+    font-weight: 900;
+    color: #64ffd2;
+    padding: 0 2px 0 2px;
   }
 }
 

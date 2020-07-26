@@ -1629,13 +1629,13 @@ body.is-touch {
   border-radius: 30px;
   background: transparent;
   color: black;
-  border: 3px solid #b2b2b2;
+  border: 1px solid #b2b2b2;
   transition: 0.2s ease all;
 
   &:hover {
     background: #fff;
     color: _palette(accent1, bg);
-    border: 3px solid white;
+    border: 1px solid white;
   }
   &[data-selected="true"] {
     text-transform: uppercase;

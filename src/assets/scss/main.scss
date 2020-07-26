@@ -1000,7 +1000,7 @@ input[type="button"],
 
   .name-emph {
     font-weight: 900;
-    color: #64ffd2;
+    color: #6ea4f7;
     padding: 0 2px 0 2px;
   }
 }
@@ -1682,11 +1682,11 @@ body.is-touch {
   }
   &[data-selected="true"] {
     text-transform: uppercase;
-    background: _palette(accent1, bg);
+    background: _palette(accent1, fg);
     border-color: _palette(accent1, bg);
     &:hover {
       color: black;
-      background: #39967c;
+      background: _palette(accent1, bg);
     }
   }
 }

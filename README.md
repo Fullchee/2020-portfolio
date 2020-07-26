@@ -1,9 +1,9 @@
 # Fullchee Zhang's 2019 Portfolio
 
 ## Todos
-
 - montserrat font for my name
 - remove the button for demo if there is no demo
+- https://material.io/components/buttons
 - alt text for every project's picture
 - image hover
   - plays video like YouTube on hover

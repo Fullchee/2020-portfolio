@@ -5,7 +5,7 @@ export default class Project extends Component {
   tags = () => {
     const project = this.props.project;
     const tags = project.tags || [];
-    const buttons = tags.map(tag => {
+    const buttons = tags.map((tag) => {
       return (
         <button
           className="tag"
@@ -75,5 +75,5 @@ export default class Project extends Component {
 
 Project.propTypes = {
   project: PropTypes.object,
-  tagClick: PropTypes.func
+  tagClick: PropTypes.func,
 };

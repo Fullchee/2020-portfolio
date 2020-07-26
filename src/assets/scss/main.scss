@@ -996,12 +996,12 @@ input[type="button"],
 
   .pronunciation {
     margin-bottom: 0;
-    margin-right: 80px;
+    color: white;
   }
 
   .name-emph {
     font-weight: 900;
-    color: #6ea4f7;
+    color: lighten(_palette(accent1, bg), 30%);
     padding: 0 2px 0 2px;
   }
 }
@@ -1014,6 +1014,11 @@ input[type="button"],
 
     a {
       color: _palette(accent2, fg-light);
+      &:hover,
+      &:focus {
+        outline: none;
+        color: lighten(_palette(accent1, bg), 20%);
+      } 
     }
   }
 
@@ -1571,13 +1576,15 @@ body.is-touch {
   border-radius: 30px;
   background: transparent;
   color: #b2b2b2;
-  border: 3px solid #b2b2b2;
+  border: 2px solid #b2b2b2;
   transition: 0.2s ease all;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     background: #fff;
-    color: black;
-    border: 3px solid white;
+    color: _palette(accent1, bg);
+    border: 2px solid white;
   }
 }
 
@@ -1618,12 +1625,6 @@ body.is-touch {
     margin: 0 0 (_size(element-margin) * 0.25) 0;
   }
 
-  p {
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin: 0;
-  }
-
   &:nth-child(2n + 1) {
     order: 1;
   }
@@ -1646,8 +1647,8 @@ body.is-touch {
   display: flex;
   justify-content: space-evenly;
   align-self: stretch;
-  width: calc(100% - 50px);
-  margin-left: 20px;
+  width: 84%;
+  margin-left: 8%;
 }
 
 .project__image {
@@ -1684,12 +1685,19 @@ body.is-touch {
   transform: translateY(0);
 }
 
+.project__description {
+  align-self: flex-start;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
 .project__tags {
   align-self: flex-start;
   margin-top: 0.75em;
 }
 
-.tags {
+.all-tags {
+  margin-bottom: 1em;
 }
 
 .tag {
@@ -1699,7 +1707,7 @@ body.is-touch {
   border-radius: 30px;
   background: transparent;
   color: black;
-  border: 1px solid #b2b2b2;
+  border: 1px solid #c9c9c9;
   transition: 0.2s ease all;
 
   &:hover,
@@ -1714,8 +1722,7 @@ body.is-touch {
   &[data-selected="true"] {
     color: white;
     font-size: 1rem;
-    // background: _palette(accent1, bg);
-    background: black;
+    background: darken(_palette(accent1, bg), 4%);
     border-color: _palette(accent1, bg);
     &:hover {
       background: _palette(accent1, bgplus10);

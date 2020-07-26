@@ -70,7 +70,7 @@ export default class Project extends Component {
             </a>
           ) : null}
         </div>
-        <p>{project.description}</p>
+        <p className="project__description">{project.description}</p>
         {this.tags()}
       </article>
     );

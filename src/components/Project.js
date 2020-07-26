@@ -38,7 +38,7 @@ export default class Project extends Component {
   render() {
     const project = this.props.project;
     return (
-      <article className="6u 12u work-item">
+      <article className="project">
         <h3>{project.caption}</h3>
         {project.img ? (
           <img

@@ -32,7 +32,7 @@ class Footer extends React.Component {
             </li>
             <li>
               <a
-              aria-label="Email me"
+                aria-label="Email me"
                 href="mailto:fullchee@gmail.com"
                 className="icon fa-envelope-o"
               >

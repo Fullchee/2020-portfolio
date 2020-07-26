@@ -1,8 +1,7 @@
 # Fullchee Zhang's 2019 Portfolio
 
 ## Todos
-- Ripple effect
-   - https://medium.com/@jh3y/how-to-create-the-ripple-effect-from-google-material-design-c6f993e1d39
+- Hong Fa Granite
 - alt text for every project's picture
 - image hover
   - plays video like YouTube on hover

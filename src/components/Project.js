@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
+import Ripples from "react-touch-ripple";
 
 export default class Project extends Component {
   tags = () => {
@@ -7,15 +8,17 @@ export default class Project extends Component {
     const tags = project.tags || [];
     const buttons = tags.map((tag) => {
       return (
-        <button
-          className="tag"
-          key={`${project.id}-${tag}`}
-          onClick={this.props.tagClick}
-          data-selected={this.props.selected === tag}
-          data-value={tag}
-        >
-          {tag}
-        </button>
+        <Ripples>
+          <button
+            className="tag"
+            key={`${project.id}-${tag}`}
+            onClick={this.props.tagClick}
+            data-selected={this.props.selected === tag}
+            data-value={tag}
+          >
+            {tag}
+          </button>
+        </Ripples>
       );
     });
     return <div className="project__tags">{buttons}</div>;

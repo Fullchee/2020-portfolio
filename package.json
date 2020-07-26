@@ -32,7 +32,8 @@
     "deploy": "git push"
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.2",
+    "react-touch-ripple": "^0.2.1"
   },
   "repository": {
     "type": "git",

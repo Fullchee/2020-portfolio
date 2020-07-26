@@ -1675,18 +1675,22 @@ body.is-touch {
   border: 1px solid #b2b2b2;
   transition: 0.2s ease all;
 
-  &:hover {
+  &:hover, &:focus {
+    outline: none;
     background: #fff;
     color: _palette(accent1, bg);
     border: 1px solid white;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0,0,0,.12);
   }
   &[data-selected="true"] {
-    text-transform: uppercase;
-    background: _palette(accent1, fg);
+    color: white;
+    font-size: 1rem;
+    background: _palette(accent1, bg);
     border-color: _palette(accent1, bg);
-    &:hover {
-      color: black;
-      background: _palette(accent1, bg);
+    &:hover,
+    &:focus,
+    &:active {
+      background: _palette(accent1, bgplus10);
     }
   }
 }

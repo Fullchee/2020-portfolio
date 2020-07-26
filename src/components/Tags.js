@@ -25,7 +25,7 @@ export default class Tags extends Component {
       );
     });
     return (
-      <div>
+      <div className="all-tags">
         <button
           className="tag"
           data-value=""

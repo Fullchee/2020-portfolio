@@ -1,14 +1,12 @@
 # Fullchee Zhang's 2019 Portfolio
 
 ## Todos
-- montserrat font for my name
-- remove the button for demo if there is no demo
-- https://material.io/components/buttons
+- Ripple effect
+   - https://medium.com/@jh3y/how-to-create-the-ripple-effect-from-google-material-design-c6f993e1d39
 - alt text for every project's picture
 - image hover
   - plays video like YouTube on hover
 - post install scripts: robot logo
-- box shadow around images to make it pop out
 - make the header less wide (for desktop)
 
 ## Dev

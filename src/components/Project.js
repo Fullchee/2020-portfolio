@@ -18,7 +18,7 @@ export default class Project extends Component {
         </button>
       );
     });
-    return <div style={{ marginTop: "10px" }}>{buttons}</div>;
+    return <div className="project__tags">{buttons}</div>;
   };
 
   getMedia = () => {
@@ -48,23 +48,27 @@ export default class Project extends Component {
           />
         ) : null}
         <div className="image__overlay"></div>
-        <div className="project-buttons">
-          <a
-            className="button"
-            target="_blank"
-            rel="noopener noreferrer"
-            href={project.repo}
-          >
-            Repo <span className="icon fa-github"></span>
-          </a>
-          <a
-            className="button"
-            target="_blank"
-            rel="noopener noreferrer"
-            href={project.demo}
-          >
-            Demo <span className="icon fa-external-link"></span>
-          </a>
+        <div className="project__buttons">
+          {project.repo ? (
+            <a
+              className="button"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={project.repo}
+            >
+              Repo <span className="icon fa-github"></span>
+            </a>
+          ) : null}
+          {project.demo ? (
+            <a
+              className="button"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={project.demo}
+            >
+              Demo <span className="icon fa-external-link"></span>
+            </a>
+          ) : null}
         </div>
         <p>{project.description}</p>
         {this.tags()}

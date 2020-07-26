@@ -21,7 +21,7 @@ export const PAST_PROJECTS = [
   {
     id: "calendar-shifts",
     img: calendarShifts,
-    caption: "Batch create Google Calendar events",
+    caption: "Batch Google Calendar events",
     description: "",
     repo: "https://github.com/Fullchee/calendar-shifts",
     demo: "https://calendar-shifts.netlify.app/",
@@ -35,7 +35,7 @@ export const PAST_PROJECTS = [
     caption: "Fullchee's values",
     description:
       "Give a random video of something meaningful to remind you of who you want to be",
-    tags: ["GraphQL", "Node.js", "React", "Front-end", "Back-end"],
+    tags: ["Node.js", "React", "Front-end", "Back-end"],
   },
   {
     id: "courseography",
@@ -44,7 +44,7 @@ export const PAST_PROJECTS = [
     description:
       "Improved the maintainability of a React app for future volunteers\n added integration tests \n added git hooks with husky",
     repo: "https://github.com/Courseography/courseography",
-    demo: "https://courseography.cs.toronto.edu/",
+    demo: "https://courseography.cdf.toronto.edu/",
     tags: ["React", "Front-end"],
   },
   {

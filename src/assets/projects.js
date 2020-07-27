@@ -6,7 +6,7 @@ import dragonBoatCalls from "../assets/images/projects/dragon-boat-calls.jpg";
 import calendarShifts from "../assets/images/projects/calendar-shifts.jpg";
 import valuesImg from "../assets/images/projects/fullchee-values.png";
 import courseography from "../assets/images/projects/courseography.jpg";
-
+import hongfa from "../assets/images/projects/hongfa.jpg";
 export const CURRENT_PROJECTS = [
   {
     id: "0",
@@ -18,6 +18,15 @@ export const CURRENT_PROJECTS = [
   },
 ];
 export const PAST_PROJECTS = [
+  {
+    id: "hong-fa-granite",
+    img: hongfa,
+    caption: "Website for Hong Fa Granite",
+    description:
+      "Static Gatsby site for a local business. Site supports both English and Chinese. (i18n)",
+    demo: "https://hongfagranite.com",
+    tags: ["React", "Front-end"],
+  },
   {
     id: "calendar-shifts",
     img: calendarShifts,
@@ -60,15 +69,16 @@ export const PAST_PROJECTS = [
     id: "2",
     img: carDetail,
     caption: "Car Detail Exchange",
-    description: "Made with Node.js, Express.js and MySQL",
+    description:
+      "Platform to connect car detailers and people with cars. Made with Node.js, Express.js,  MySQL and bootstrap.",
     demo: "https://hidden-shore-40090.herokuapp.com/",
     tags: ["Node.js", "Back-end"],
   },
   {
     id: "3",
     img: dotFiles,
-    caption: "Dotfiles Repository for Ubuntu",
-    description: "zsh, git, npm and other configuration files",
+    caption: "Dotfiles repository",
+    description: "zsh, git, vim and other configuration files for Ubuntu, Mac and Windows.",
     repo: "https://github.com/Fullchee/dotfiles",
     tags: [],
   },
@@ -83,8 +93,9 @@ export const PAST_PROJECTS = [
   {
     id: "6",
     img: delayDarkEra,
-    caption: "HTML5 Game: Delay the Dark Era",
-    description: "HTML5 Game with the mouse",
+    caption: "HTML5 Canvas Game",
+    description:
+      "Delay the dark era: click the black holes before they swallow up the universe!",
     repo: "https://github.com/Fullchee/delay-the-dark-era",
     demo: "https://fullchee.github.io/delay-the-dark-era/",
     tags: ["Front-end"],

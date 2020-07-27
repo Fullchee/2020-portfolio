@@ -16,6 +16,7 @@
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0",
     "react-images": "^0.5.19",
+    "react-touch-ripple": "^0.2.1",
     "styled-components": "^5.1.1"
   },
   "keywords": [
@@ -32,8 +33,7 @@
     "deploy": "git push"
   },
   "devDependencies": {
-    "prettier": "^1.14.2",
-    "react-touch-ripple": "^0.2.1"
+    "prettier": "^1.14.2"
   },
   "repository": {
     "type": "git",

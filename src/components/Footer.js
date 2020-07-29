@@ -6,7 +6,12 @@ class Footer extends React.Component {
     return (
       <div id="footer">
         <div className="resume">
-          <a className="resume__button" href={resume}>
+          <a
+            className="resume__button"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={resume}
+          >
             Resume
           </a>
         </div>
@@ -15,6 +20,8 @@ class Footer extends React.Component {
             <li>
               <a
                 aria-label="Check out my GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.github.com/Fullchee"
                 className="icon fa-github"
               >
@@ -24,6 +31,8 @@ class Footer extends React.Component {
             <li>
               <a
                 aria-label="Check out my LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/fullchee-zhang/"
                 className="icon fa-linkedin"
               >
@@ -33,6 +42,8 @@ class Footer extends React.Component {
             <li>
               <a
                 aria-label="Email me"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="mailto:fullchee@gmail.com"
                 className="icon fa-envelope-o"
               >

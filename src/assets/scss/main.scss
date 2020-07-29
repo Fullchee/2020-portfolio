@@ -1592,7 +1592,7 @@ body.is-touch {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 4000px;
+  height: 140em;
   align-items: space-between;
   &::before,
   &::after {
@@ -1634,6 +1634,9 @@ body.is-touch {
 }
 
 @media only screen and (max-width: 600px) {
+  .projects {
+    height: 290em;
+  }
   // only one column
   .project {
     width: 100%;

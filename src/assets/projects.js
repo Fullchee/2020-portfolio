@@ -11,7 +11,6 @@ export const CURRENT_PROJECTS = [
   {
     id: "0",
     img: chineseChess,
-    alt: "chinese chess board",
     caption: "Chinese Chess with React!",
     description: "Built with React, React Testing Library, and SCSS.",
     tags: ["Front-end", "React", "React Testing Library", "SASS"],

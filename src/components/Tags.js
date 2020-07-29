@@ -14,10 +14,9 @@ export default class Tags extends Component {
   render() {
     const buttons = this.state.tags.map((tag) => {
       return (
-        <Ripple>
+        <Ripple key={tag}>
           <button
             className="tag"
-            key={tag}
             data-selected={this.props.filter === tag}
             onClick={this.props.tagClick}
             data-value={tag}

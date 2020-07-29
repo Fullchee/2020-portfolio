@@ -1728,6 +1728,7 @@ body.is-touch {
     border-color: _palette(accent1, bg);
     &:hover {
       background: _palette(accent1, bgplus10);
+      border-color: _palette(accent1, bgplus10);
     }
   }
 }

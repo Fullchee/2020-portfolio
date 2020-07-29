@@ -1,7 +1,6 @@
 # Fullchee Zhang's 2019 Portfolio
 
 ## Todos
-- Hong Fa Granite
 - alt text for every project's picture
 - image hover
   - plays video like YouTube on hover

@@ -8,10 +8,9 @@ export default class Project extends Component {
     const tags = project.tags || [];
     const buttons = tags.map((tag) => {
       return (
-        <Ripples>
+        <Ripples key={`${project.id}-${tag}`}>
           <button
             className="tag"
-            key={`${project.id}-${tag}`}
             onClick={this.props.tagClick}
             data-selected={this.props.selected === tag}
             data-value={tag}
@@ -38,18 +37,42 @@ export default class Project extends Component {
     );
   };
 
-  render() {
-    const project = this.props.project;
-    return (
-      <article className="project">
-        <h3>{project.caption}</h3>
-        {project.img ? (
+  renderVideoOrImage = (project) => {
+    if (project.video && project.img) {
+      return (
+        <video
+          key={`${project.id}-video`}
+          onMouseOver={(e) => e.target.play()}
+          onMouseOut={(e) => e.target.pause()}
+          src={project.video || null}
+        >
           <img
             className="project__image"
             src={project.img}
             alt={project.altText || ""}
           />
-        ) : null}
+        </video>
+      );
+    }
+
+    if (project.img) {
+      return (
+        <img
+          className="project__image"
+          src={project.img}
+          alt={project.altText || ""}
+        />
+      );
+    }
+    return null;
+  };
+
+  render() {
+    const project = this.props.project;
+    return (
+      <article className="project">
+        <h3>{project.caption}</h3>
+        {this.renderVideoOrImage(project)}
         <div className="image__overlay"></div>
         <div className="project__buttons">
           {project.repo ? (

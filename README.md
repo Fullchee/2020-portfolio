@@ -6,6 +6,7 @@
   - plays video like YouTube on hover
 - post install scripts: robot logo
 - make the header less wide (for desktop)
+- optimize the images (make them smaller)
 
 ## Dev
 

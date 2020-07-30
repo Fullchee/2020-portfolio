@@ -23,24 +23,11 @@ export default class Project extends Component {
     return <div className="project__tags">{buttons}</div>;
   };
 
-  getMedia = () => {
-    const project = this.props.project;
-    if (project.video) {
-      return <video muted src={project.video} loop></video>;
-    }
-    return (
-      <img
-        className="project__image"
-        src={project.img}
-        alt={project.altText || ""}
-      />
-    );
-  };
-
   renderVideoOrImage = (project) => {
     if (project.video && project.img) {
       return (
         <video
+          className="project__video"
           key={`${project.id}-video`}
           onMouseOver={(e) => e.target.play()}
           onMouseOut={(e) => e.target.pause()}
@@ -49,7 +36,7 @@ export default class Project extends Component {
           <img
             className="project__image"
             src={project.img}
-            alt={project.altText || ""}
+            alt={project.alt || ""}
           />
         </video>
       );
@@ -60,7 +47,7 @@ export default class Project extends Component {
         <img
           className="project__image"
           src={project.img}
-          alt={project.altText || ""}
+          alt={project.alt || ""}
         />
       );
     }

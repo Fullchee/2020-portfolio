@@ -4,13 +4,17 @@ import carDetail from "../assets/images/projects/car-detail-exchange.jpg";
 import delayDarkEra from "../assets/images/projects/delay-the-dark-era.jpg";
 import dragonBoatCalls from "../assets/images/projects/dragon-boat-calls.jpg";
 import calendarShifts from "../assets/images/projects/calendar-shifts.jpg";
+import calendarShiftsVideo from "../assets/images/projects/videos/calendar-shifts-video.mp4";
 import valuesImg from "../assets/images/projects/fullchee-values.png";
 import courseography from "../assets/images/projects/courseography.jpg";
 import hongfa from "../assets/images/projects/hongfa.jpg";
+import hongfaVideo from "../assets/images/projects/videos/hong-fa-granite-demo.mp4";
+
 export const CURRENT_PROJECTS = [
   {
     id: "0",
     img: chineseChess,
+    alt: "chinese chess board",
     caption: "Chinese Chess with React!",
     description: "Built with React, React Testing Library, and SCSS.",
     tags: ["Front-end", "React", "React Testing Library", "SASS"],
@@ -20,6 +24,8 @@ export const PAST_PROJECTS = [
   {
     id: "hong-fa-granite",
     img: hongfa,
+    alt: "image of hong fa granite.com",
+    video: hongfaVideo,
     caption: "Website for Hong Fa Granite",
     description:
       "Static Gatsby site for a local business. Site supports both English and Chinese. (i18n)",
@@ -29,6 +35,8 @@ export const PAST_PROJECTS = [
   {
     id: "calendar-shifts",
     img: calendarShifts,
+    alt: "form for creating batch Google calendar events",
+    video: calendarShiftsVideo,
     caption: "Batch Google Calendar events",
     description: "",
     repo: "https://github.com/Fullchee/calendar-shifts",

@@ -44,16 +44,6 @@ export const PAST_PROJECTS = [
     tags: ["React", "Front-end"],
   },
   {
-    id: "fullchee-values",
-    img: valuesImg,
-    repo: "https://github.com/Fullchee/values-client",
-    demo: "https://fullchee-values.netlify.app/",
-    caption: "Fullchee's values",
-    description:
-      "Give a random video of something meaningful to remind you of who you want to be",
-    tags: ["Node.js", "React", "Front-end", "Back-end"],
-  },
-  {
     id: "courseography",
     img: courseography,
     caption: "Courseography",
@@ -64,7 +54,26 @@ export const PAST_PROJECTS = [
     tags: ["React", "Front-end"],
   },
   {
-    id: "1",
+    id: "fullchee-values",
+    img: valuesImg,
+    repo: "https://github.com/Fullchee/values-client",
+    demo: "https://fullchee-values.netlify.app/",
+    caption: "Fullchee's values",
+    description:
+      "Give a random video of something meaningful to remind you of who you want to be",
+    tags: ["Node.js", "React", "Front-end", "Back-end"],
+  },
+  {
+    id: "dotfiles",
+    img: dotFiles,
+    caption: "Dotfiles repository",
+    description:
+      "zsh, git, vim and other configuration files for Ubuntu, Mac and Windows.",
+    repo: "https://github.com/Fullchee/dotfiles",
+    tags: [],
+  },
+  {
+    id: "dbcalls",
     img: dragonBoatCalls,
     caption: "Static Site for learning dragon boat calls",
     description: "Vanilla JS site with descriptions and videos",
@@ -73,21 +82,13 @@ export const PAST_PROJECTS = [
     tags: ["Front-end"],
   },
   {
-    id: "2",
+    id: "cardetail",
     img: carDetail,
     caption: "Car Detail Exchange",
     description:
       "Platform to connect car detailers and people with cars. Made with Node.js, Express.js,  MySQL and bootstrap.",
     demo: "https://hidden-shore-40090.herokuapp.com/",
     tags: ["Node.js", "Back-end"],
-  },
-  {
-    id: "3",
-    img: dotFiles,
-    caption: "Dotfiles repository",
-    description: "zsh, git, vim and other configuration files for Ubuntu, Mac and Windows.",
-    repo: "https://github.com/Fullchee/dotfiles",
-    tags: [],
   },
   // {
   //   id: "5",
@@ -98,7 +99,7 @@ export const PAST_PROJECTS = [
   //   tags: ["C", "Networking"]
   // },
   {
-    id: "6",
+    id: "delaydarkera",
     img: delayDarkEra,
     caption: "HTML5 Canvas Game",
     description:

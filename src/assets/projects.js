@@ -5,7 +5,7 @@ import delayDarkEra from "../assets/images/projects/delay-the-dark-era.jpg";
 import dragonBoatCalls from "../assets/images/projects/dragon-boat-calls.jpg";
 import calendarShifts from "../assets/images/projects/calendar-shifts.jpg";
 import calendarShiftsVideo from "../assets/images/projects/videos/calendar-shifts-video.mp4";
-import valuesImg from "../assets/images/projects/fullchee-values.png";
+import remindersImg from "../assets/images/projects/fullchee-values.png";
 import courseography from "../assets/images/projects/courseography.jpg";
 import hongfa from "../assets/images/projects/hongfa.jpg";
 import hongfaVideo from "../assets/images/projects/videos/hong-fa-granite-demo.mp4";
@@ -54,13 +54,13 @@ export const PAST_PROJECTS = [
     tags: ["React", "Front-end"],
   },
   {
-    id: "fullchee-values",
-    img: valuesImg,
-    repo: "https://github.com/Fullchee/values-client",
-    demo: "https://fullchee-values.netlify.app/",
-    caption: "Fullchee's values",
+    id: "fullchee-images",
+    img: remindersImg,
+    repo: "https://github.com/Fullchee/reminders-frontend",
+    demo: "https://fullchee-reminders.netlify.app/",
+    caption: "Reminders",
     description:
-      "Give a random video of something meaningful to remind you of who you want to be",
+      "Give a random video/podcast of something that was meaningful to remind you of who you want to be",
     tags: ["Node.js", "React", "Front-end", "Back-end"],
   },
   {

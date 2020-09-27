@@ -28,7 +28,10 @@ export const PAST_PROJECTS = [
     video: hongfaVideo,
     caption: "Website for Hong Fa Granite",
     description:
-      "Static Gatsby site for a local business. Site supports both English and Chinese. (i18n)",
+      `<ul>
+        <li>Static Gatsby site for a local business</li> 
+        <li>Site supports both English and Chinese (i18n)</li>
+      </ul>`,
     demo: "https://hongfagranite.com",
     tags: ["React", "Front-end"],
   },
@@ -38,7 +41,7 @@ export const PAST_PROJECTS = [
     alt: "form for creating batch Google calendar events",
     video: calendarShiftsVideo,
     caption: "Batch Google Calendar events",
-    description: "",
+    description: "Creates batch google calendar events on arbitrary days",
     repo: "https://github.com/Fullchee/calendar-shifts",
     demo: "https://calendar-shifts.netlify.app/",
     tags: ["React", "Front-end"],
@@ -48,7 +51,11 @@ export const PAST_PROJECTS = [
     img: courseography,
     caption: "Courseography",
     description:
-      "Improved the maintainability of a React app for future volunteers\n added integration tests \n added git hooks with husky",
+      `<ul>
+        <li>Improved the maintainability of a React app</li>
+        <li>Added integration tests</li>
+        <li>added git hooks with husky</li>
+      </ul>`,
     repo: "https://github.com/Courseography/courseography",
     demo: "https://courseography.cdf.toronto.edu/",
     tags: ["React", "Front-end"],
@@ -60,7 +67,9 @@ export const PAST_PROJECTS = [
     demo: "https://fullchee-reminders.netlify.app/",
     caption: "Reminders",
     description:
-      "Give a random video/podcast of something that was meaningful to remind you of who you want to be",
+      `<ul><li>Personal platform to record and play meaningful media (videos, podcasts)</li>
+      <li>Get a random video/podcast</li>
+      </ul>`,
     tags: ["Node.js", "React", "Front-end", "Back-end"],
   },
   {
@@ -86,7 +95,7 @@ export const PAST_PROJECTS = [
     img: carDetail,
     caption: "Car Detail Exchange",
     description:
-      "Platform to connect car detailers and people with cars. Made with Node.js, Express.js,  MySQL and bootstrap.",
+      "<ul><li>Platform to connect car detailers and people with cars.</li><li>Made with Node.js, Express.js, MySQL and bootstrap.</li></ul>",
     demo: "https://hidden-shore-40090.herokuapp.com/",
     tags: ["Node.js", "Back-end"],
   },
@@ -103,7 +112,12 @@ export const PAST_PROJECTS = [
     img: delayDarkEra,
     caption: "HTML5 Canvas Game",
     description:
-      "Delay the dark era: click the black holes before they swallow up the universe!",
+      `<ul>
+        <li>When the level starts, objects move in random directions</li>
+        <li>Black holes appear randomly</li>
+        <li li>Click on the black holes to get points</li>
+        <li>If a black hole collides with a another object, you lose points</li>
+      </ul>`,
     repo: "https://github.com/Fullchee/delay-the-dark-era",
     demo: "https://fullchee.github.io/delay-the-dark-era/",
     tags: ["Front-end"],

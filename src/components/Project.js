@@ -26,11 +26,13 @@ export default class Project extends Component {
   renderVideoOrImage = (project) => {
     if (project.video && project.img) {
       return (
-        <video
+        <video muted
           className="project__video"
           key={`${project.id}-video`}
           onMouseOver={(e) => e.target.play()}
+          onFocus={(e) => e.target.play()}
           onMouseOut={(e) => e.target.pause()}
+          onBlur={(e) => e.target.pause()}
           src={project.video || null}
         >
           <img

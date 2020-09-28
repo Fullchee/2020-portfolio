@@ -85,7 +85,7 @@ export default class Project extends Component {
             </a>
           ) : null}
         </div>
-        <p className="project__description" dangerouslySetInnerHTML={({ "__html": project.description })}></p>
+        <div className="project__description" dangerouslySetInnerHTML={({ "__html": project.description })}></div>
         {this.tags()}
       </article>
     );

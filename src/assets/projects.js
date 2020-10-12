@@ -5,9 +5,9 @@ import delayDarkEra from "../assets/images/projects/delay-the-dark-era.jpg";
 import dragonBoatCalls from "../assets/images/projects/dragon-boat-calls.jpg";
 import calendarShifts from "../assets/images/projects/calendar-shifts.jpg";
 import calendarShiftsVideo from "../assets/images/projects/videos/calendar-shifts-video.mp4";
-import remindersImg from "../assets/images/projects/fullchee-values.png";
 import courseography from "../assets/images/projects/courseography.jpg";
 import hongfa from "../assets/images/projects/hongfa.jpg";
+import reminders from "../assets/images/projects/reminders.jpg";
 import hongfaVideo from "../assets/images/projects/videos/hong-fa-granite-demo.mp4";
 
 export const CURRENT_PROJECTS = [
@@ -62,7 +62,7 @@ export const PAST_PROJECTS = [
   },
   {
     id: "fullchee-images",
-    img: remindersImg,
+    img: reminders,
     repo: "https://github.com/Fullchee/reminders-frontend",
     demo: "https://fullchee-reminders.netlify.app/",
     caption: "Reminders",

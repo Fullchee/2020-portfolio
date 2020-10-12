@@ -1,4 +1,4 @@
-# Fullchee Zhang's 2019 Portfolio
+# Fullchee Zhang's 2020 Portfolio
 
 ## Todos
 - alt text for every project's picture

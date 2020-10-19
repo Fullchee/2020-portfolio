@@ -1,8 +1,9 @@
 # Fullchee Zhang's 2020 Portfolio
 
 ## Todos
+- double tap to expand images
+- show a little box on top of each item to double tap to expand
 - alt text for every project's picture
-- image hover
 - optimize the images (make them smaller)
 
 ## Dev

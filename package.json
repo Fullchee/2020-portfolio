@@ -17,6 +17,7 @@
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0",
     "react-images": "^0.5.19",
+    "react-modal-video": "^1.2.6",
     "react-touch-ripple": "^0.2.1",
     "styled-components": "^5.1.1"
   },

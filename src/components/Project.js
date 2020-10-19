@@ -3,10 +3,6 @@ import React, { Component } from "react";
 import Ripples from "react-touch-ripple";
 
 export default class Project extends Component {
-  constructor() {
-    super();
-    this.state = { videoTooltip: "Hover or tap to play" };
-  }
   tags = () => {
     const project = this.props.project;
     const tags = project.tags || [];
@@ -30,29 +26,22 @@ export default class Project extends Component {
   renderVideoOrImage = (project) => {
     if (project.video && project.img) {
       return (
-        <div
-          className="project__video-tooltip"
-          onMouseOver={(e) => this.setState({ videoTooltip: "" })}
-          onMouseOut={(e) => this.setState({ videoTooltip: "Hover or tap to play" })}
+        <video muted
+          className="project__video"
+          key={`${project.id}-video`}
+          // onMouseOver={(e) => e.target.play()}
+          // onFocus={(e) => e.target.play()}
+          // onMouseOut={(e) => e.target.pause()}
+          // onBlur={(e) => e.target.pause()}
+          onDoubleClick={this.props.onDoubleClick}
+          src={project.video || null}
         >
-          {this.state.videoTooltip}
-          <video
-            muted
-            className="project__video"
-            key={`${project.id}-video`}
-            onMouseOver={(e) => e.target.play()}
-            onFocus={(e) => e.target.play()}
-            onMouseOut={(e) => e.target.pause()}
-            onBlur={(e) => e.target.pause()}
-            src={project.video || null}
-          >
-            <img
-              className="project__image"
-              src={project.img}
-              alt={project.alt || ""}
-            />
-          </video>
-        </div>
+          <img
+            className="project__image"
+            src={project.img}
+            alt={project.alt || ""}
+          />
+        </video>
       );
     }
 
@@ -97,10 +86,7 @@ export default class Project extends Component {
             </a>
           ) : null}
         </div>
-        <div
-          className="project__description"
-          dangerouslySetInnerHTML={{ __html: project.description }}
-        ></div>
+        <div className="project__description" dangerouslySetInnerHTML={({ "__html": project.description })}></div>
         {this.tags()}
       </article>
     );

@@ -2,12 +2,14 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 import Project from "./Project";
 import Tags from "./Tags";
+import ModalVideo from 'react-modal-video'
 
 export default class Gallery extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      filter: ""
+      filter: "",
+      isOpen: false,
     };
   }
   tagClick = e => {
@@ -17,6 +19,13 @@ export default class Gallery extends Component {
       filter: newFilter
     });
   };
+
+  openModal(project) {
+    return () => {
+      this.setState({ isOpen: true, selectedProject: project });
+    }
+  }
+
   renderGallery = () => {
     const { projects } = this.props;
 
@@ -39,6 +48,7 @@ export default class Gallery extends Component {
             tagClick={this.tagClick}
             key={project.id}
             selected={this.state.filter}
+            onDoubleClick={this.openModal(project)}
           />
         );
       });
@@ -50,6 +60,7 @@ export default class Gallery extends Component {
       <>
         <Tags filter={this.state.filter} tagClick={this.tagClick} />
         <div>{this.renderGallery()}</div>
+        <ModalVideo channel='custom' isOpen={this.state.isOpen} url={this.state.selectedProject && this.state.selectedProject.video} onClose={() => this.setState({ isOpen: false })} />
       </>
     );
   }
